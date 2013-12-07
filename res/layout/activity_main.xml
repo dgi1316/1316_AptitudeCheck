@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:alpha="0.7"
+        android:background="#000000"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="@string/message1" />
+
+    <ListView
+        android:id="@+id/lvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <com.google.ads.AdView android:id="@+id/adViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        ads:adUnitId="a1526261af57771"
+        ads:adSize="BANNER"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

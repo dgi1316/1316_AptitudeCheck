@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/action_back"
+        android:icon="@drawable/ic_action_back"
+        android:title="@string/action_back"
+        android:showAsAction="always"/>
+    
+    <item 
+        android:id="@+id/action_forward"
+        android:icon="@drawable/ic_action_forward"
+        android:title="@string/action_forward"
+        android:showAsAction="always"/>
+    
+    <item 
+        android:id="@+id/action_slate"
+        android:icon="@drawable/ic_action_slate"
+        android:title="@string/action_slate"
+        android:showAsAction="always"/>
+    
+    <item 
+        android:id="@+id/action_bookmark"
+        android:icon="@drawable/ic_action_bookmark"
+        android:title="@string/action_bookmark"
+        android:showAsAction="always"/>
+    
+    <item 
+        android:icon="@drawable/ic_action_overflow"
+        android:title="@string/more"
+        android:showAsAction="always">
+        
+        <menu>
+            
+            <item
+                android:id="@+id/action_formula"
+                android:icon="@drawable/ic_action_formula"
+                android:title="@string/action_formula"/>
+            
+            <item 
+                android:id="@+id/action_explain"
+                android:icon="@drawable/ic_action_explain"
+                android:title="@string/action_explain"/>
+        
+        </menu>
+    
+    </item>
+
+</menu>

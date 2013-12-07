@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/action_formula"
+        android:icon="@drawable/ic_action_formula"
+        android:title="@string/action_formula"
+        android:showAsAction="always"/>
+    
+    <item 
+        android:id="@+id/action_erase"
+        android:icon="@drawable/ic_action_replay"
+        android:title="@string/action_replay"
+        android:showAsAction="always"/>
+
+</menu>

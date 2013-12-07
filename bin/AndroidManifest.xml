@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hard.targets.aptitudecheck"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme" >
+        <activity
+            android:name="com.hard.targets.aptitudecheck.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hard.targets.aptitudecheck.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hard.targets.aptitudecheck.BookmarkActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.hard.targets.aptitudecheck.MenuActivity"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hard.targets.aptitudecheck.MenuActivity" />
+
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.BOOKMARKACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hard.targets.aptitudecheck.TestActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.hard.targets.aptitudecheck.MenuActivity"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hard.targets.aptitudecheck.MenuActivity" />
+
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.TESTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hard.targets.aptitudecheck.AboutActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.hard.targets.aptitudecheck.MenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hard.targets.aptitudecheck.MenuActivity" />
+
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.ABOUTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.hard.targets.aptitudecheck.SlateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.SLATEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hard.targets.aptitudecheck.SolutionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.SOLUTIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hard.targets.aptitudecheck.FormulaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.FORMULAACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hard.targets.aptitudecheck.MenuActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.hard.targets.aptitudecheck.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hard.targets.aptitudecheck.MainActivity" />
+            <intent-filter>
+                <action android:name="com.hard.targets.aptitudecheck.MENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
